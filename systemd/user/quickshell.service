@@ -1,0 +1,15 @@
+[Unit]
+Description=Quickshell desktop shell (ii)
+Documentation=https://quickshell.outfoxxed.me/
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/quickshell -c ii --no-duplicate --no-color
+Restart=always
+RestartSec=2s
+TimeoutStopSec=5s
+KillMode=mixed
+
+[Install]
+WantedBy=default.target
