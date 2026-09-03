@@ -1,0 +1,9 @@
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+**/secrets/**
+**/*token*
+**/*credential*
